@@ -19,7 +19,7 @@ jobs:
         run: zip -r LadyElyssa.taco . -i "Data/*" \*.xml
 
       - name: Create release
-        id: create-release
+        id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
